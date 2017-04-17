@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="listdatastatuslayout_image_top">120dp</dimen>
+    <dimen name="listdatastatuslayout_image_width">70dp</dimen>
+
+    <dimen name="listdatastatuslayout_text_top">10dp</dimen>
+    <dimen name="listdatastatuslayout_text_size">14sp</dimen>
+
+    <dimen name="listdatastatuslayout_btn_text_size">14sp</dimen>
+    <dimen name="listdatastatuslayout_btn_top">10dp</dimen>
+    <dimen name="listdatastatuslayout_btn_width">120dp</dimen>
+    <dimen name="listdatastatuslayout_btn_height">35dp</dimen>
+
+    <dimen name="btn_text_size">14sp</dimen>
+    <dimen name="btn_width">150dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_paddingBottom">6dp</dimen>
+    <dimen name="btn_paddingLeft">18dp</dimen>
+    <dimen name="btn_paddingRight">18dp</dimen>
+    <dimen name="btn_paddingTop">6dp</dimen>
+
+
+</resources>

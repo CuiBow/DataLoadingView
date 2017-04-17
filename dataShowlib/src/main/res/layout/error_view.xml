@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listdatastatuslayout_white">
+
+    <ImageView
+        android:id="@+id/error_image"
+        android:layout_width="@dimen/listdatastatuslayout_image_width"
+        android:layout_height="@dimen/listdatastatuslayout_image_width"
+        android:layout_marginTop="@dimen/listdatastatuslayout_image_top"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/listdatastatuslayout_text_top"
+        android:textColor="@color/base_text_color_light"
+        android:textSize="@dimen/listdatastatuslayout_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/error_image"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/listdatastatuslayout_btn_top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/error_text"
+
+        android:background="@drawable/selector_btn_back_gray"
+        android:textSize="@dimen/btn_text_size"
+        android:id="@+id/error_reload_btn"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/btn_paddingBottom"
+        android:paddingLeft="@dimen/btn_paddingLeft"
+        android:paddingRight="@dimen/btn_paddingRight"
+        android:paddingTop="@dimen/btn_paddingTop"
+        android:textColor="@color/base_text_color_light"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
