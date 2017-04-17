@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="style_progressbar" parent="Widget.AppCompat.ProgressBar">
+    <style name="style_progressbar" parent="@android:style/Widget.ProgressBar">
         <item name="android:indeterminateDrawable">@drawable/progressbar</item>
     </style>
 
