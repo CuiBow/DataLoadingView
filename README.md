@@ -1,13 +1,16 @@
 
 使用方式
 
-allprojects {
-	repositories {
-		...
-		maven { url 'https://jitpack.io' }
-	}
-}
+  allprojects {
 
-dependencies { 
+  	repositories {
+  		...
+	  	maven { url 'https://jitpack.io' }
+    }
+  }
+
+  dependencies { 
+
 	   compile 'com.github.CuiBow:DataLoadingView:1.0'
-}
+     
+  }
