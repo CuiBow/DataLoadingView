@@ -1,16 +1,19 @@
 
-使用方式
+#### 使用方式
 
-  allprojects {
+ ``` allprojects {
 
-  	repositories {
+  repositories {
   		...
 	  	maven { url 'https://jitpack.io' }
     }
-  }
+}
 
-  dependencies { 
+
+
+
+ dependencies { 
 
 	   compile 'com.github.CuiBow:DataLoadingView:1.0'
      
-  }
+}
