@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyApplication30.iml" filepath="$PROJECT_DIR$/MyApplication30.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataLoadingView.iml" filepath="$PROJECT_DIR$/DataLoadingView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/dataShowlib/dataShowlib.iml" filepath="$PROJECT_DIR$/dataShowlib/dataShowlib.iml" />
     </modules>
