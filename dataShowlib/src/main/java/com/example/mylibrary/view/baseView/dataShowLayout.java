@@ -115,10 +115,13 @@ public class dataShowLayout extends FrameLayout {
         if (getChildCount() > 1) {
             throw new IllegalStateException("LoadingLayout can host only one direct child");
         }
-        mView = this.getChildAt(0);
-        if (!isFirstVisible) {
-            mView.setVisibility(View.GONE);
+        if (getChildCount()>0)
+        {
+            mView = this.getChildAt(0);
         }
+//        if (!isFirstVisible) {
+//            mView.setVisibility(View.GONE);
+//        }
         buildView();
     }
 
