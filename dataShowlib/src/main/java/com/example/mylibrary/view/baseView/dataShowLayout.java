@@ -119,9 +119,9 @@ public class dataShowLayout extends FrameLayout {
         {
             mView = this.getChildAt(0);
         }
-//        if (!isFirstVisible) {
-//            mView.setVisibility(View.GONE);
-//        }
+        if (!isFirstVisible) {
+            mView.setVisibility(View.GONE);
+        }
         buildView();
     }
 
