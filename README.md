@@ -2,11 +2,11 @@
 状态切换工具
 
 
-#### 特点 
+### 特点 
 
 可以根据自己的需求传入相应字段进行创建
 
-#### 使用方式
+### 使用方式
     
 1.在你的项目的 build.gradle 添加以下代码 Add it in your root build.gradle at the end of repositories:
 ```
