@@ -10,14 +10,14 @@ import android.view.View;
 
 import com.example.admin.myapplication.R;
 import com.example.admin.myapplication.view1.adapter.TestAdapter;
-import com.example.mylibrary.view.baseView.DataShowLayout;
+import com.example.mylibrary.view.baseView.dataShowLayout;
 import com.example.mylibrary.view.type.ErrorType;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity{
-    private DataShowLayout layout;
+    private dataShowLayout layout;
     private RecyclerView rec;
     private TestAdapter adapter;
     private List<String> musicList=new ArrayList<String>();
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
 
 
-        layout= (DataShowLayout) findViewById(R.id.views);
+        layout= (dataShowLayout) findViewById(R.id.views);
         rec= (RecyclerView) findViewById(R.id.rec);
         setRecSetting();
         errors="error";

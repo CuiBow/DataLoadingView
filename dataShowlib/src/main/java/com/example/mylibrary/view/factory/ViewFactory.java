@@ -7,7 +7,7 @@ import android.view.View;
 
 import com.example.mylibrary.R;
 import com.example.mylibrary.view.baseView.DataLayoutBuilder;
-import com.example.mylibrary.view.baseView.DataShowLayout;
+import com.example.mylibrary.view.baseView.dataShowLayout;
 import com.example.mylibrary.view.type.ErrorType;
 import com.example.mylibrary.view.errorViews.ErrorsView;
 import com.example.mylibrary.view.errorViews.IView;
@@ -21,7 +21,7 @@ import com.example.mylibrary.view.type.LoadingType;
 public class ViewFactory implements IViewFactory {
     private int loadingType;
     @Override
-    public IView getViewFactory(Context context, @DataShowLayout.ViewState int type) {
+    public IView getViewFactory(Context context, @dataShowLayout.ViewState int type) {
         ErrorsView view=new ErrorsView(context);
         LoadingView loadingView=new LoadingView(context);
         //初始值防止空指针

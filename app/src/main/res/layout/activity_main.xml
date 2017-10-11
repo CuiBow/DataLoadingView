@@ -7,7 +7,7 @@
   >
 
 
-   <com.example.mylibrary.view.baseView.DataShowLayout
+   <com.example.mylibrary.view.baseView.dataShowLayout
        android:id="@+id/views"
        android:layout_width="match_parent"
        android:layout_height="match_parent" >
@@ -17,6 +17,6 @@
           android:layout_width="match_parent"
           android:layout_height="match_parent"/>
 
-   </com.example.mylibrary.view.baseView.DataShowLayout>
+   </com.example.mylibrary.view.baseView.dataShowLayout>
 
 </LinearLayout>

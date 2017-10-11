@@ -19,7 +19,7 @@ import com.example.mylibrary.view.errorViews.IView;
  * Created by Admin on 2017/4/14.
  */
 
-public class DataShowLayout extends FrameLayout {
+public class dataShowLayout extends FrameLayout {
     private View mView;
     private IView emptyView;
     private IView netErrorView;
@@ -95,18 +95,18 @@ public class DataShowLayout extends FrameLayout {
     };
 
 
-    public DataShowLayout(Context context) {
+    public dataShowLayout(Context context) {
         this(context,null);
     }
 
-    public DataShowLayout(Context context, AttributeSet attrs) {
+    public dataShowLayout(Context context, AttributeSet attrs) {
         this(context, attrs,0);
     }
 
-    public DataShowLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public dataShowLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.DataShowLayout);
-        isFirstVisible = a.getBoolean(R.styleable.DataShowLayout_isFirstVisible, false);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.dataShowLayout);
+        isFirstVisible = a.getBoolean(R.styleable.dataShowLayout_isFirstVisible, false);
         a.recycle();
     }
 
