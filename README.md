@@ -1,6 +1,8 @@
 # DataLoadingView
 状态切换工具
 
+### 效果
+![image](https://github.com/CuiBow/DataLoadingView/blob/master/example/Untitled.gif)
 
 ### 特点 
 
@@ -25,14 +27,14 @@ allprojects {
 ``` 
 dependencies { 
 
-	   compile 'com.github.CuiBow:DataLoadingView:v1.2'
+	   compile 'com.github.CuiBow:DataLoadingView:v1.3'
      
 } 
 ```
 
 3.书写xml
 ``` 
-<com.example.mylibrary.view.baseView.DataShowLayout
+<com.example.mylibrary.view.baseView.dataShowLayout
        android:id="@+id/views"
        android:layout_width="match_parent"
        android:layout_height="match_parent" >
@@ -41,7 +43,7 @@ dependencies {
           android:id="@+id/rec"
           android:layout_width="match_parent"
           android:layout_height="match_parent"/>
-   </com.example.mylibrary.view.baseView.DataShowLayout> 
+   </com.example.mylibrary.view.baseView.dataShowLayout> 
    ```
    
 4.创建自定义构造器(不创建显示默认)
