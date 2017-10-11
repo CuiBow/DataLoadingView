@@ -14,6 +14,6 @@
 
  dependencies { 
 
-	   compile 'com.github.CuiBow:DataLoadingView:1.0'
+	   compile 'com.github.CuiBow:DataLoadingView:v1.2'
      
 }
