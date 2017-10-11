@@ -3,6 +3,7 @@
     package="com.example.admin.myapplication">
 
     <application
+        android:name=".view1.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

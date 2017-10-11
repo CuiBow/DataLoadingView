@@ -1,6 +1,8 @@
 package com.example.mylibrary.view.errorViews;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.StringRes;
 import android.util.AttributeSet;
@@ -26,7 +28,6 @@ public abstract class IView extends LinearLayout {
     }
 
     protected abstract void initView();
-
     public final void showView()
     {
         setVisibility(VISIBLE);
@@ -37,12 +38,13 @@ public abstract class IView extends LinearLayout {
     }
     public abstract void setText(int text);
     public abstract void setImage(@DrawableRes int res);
+    public abstract void setImage(Bitmap res);
     public abstract void setRetryBtnText(@StringRes int text);
+    public abstract void setRetryBtnText(String text);
     public abstract void setBtnOnClickListener(OnClickListener view);
-
-
-
-
-
-
+    public abstract void setTextColor(int text);
+    public abstract void setLoadingView(Drawable res);
+    public abstract void setLoadingView(View res);
+    public abstract void setLoadingView();
+    public abstract void stopAnimation();
 }

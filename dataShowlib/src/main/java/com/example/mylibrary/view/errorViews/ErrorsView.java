@@ -1,6 +1,8 @@
 package com.example.mylibrary.view.errorViews;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.StringRes;
 import android.view.View;
@@ -42,6 +44,8 @@ public class ErrorsView extends IView {
         errorText.setText(text);
     }
 
+
+
     @Override
     public void setImage(@DrawableRes int res) {
         Glide.with(getContext())
@@ -50,13 +54,50 @@ public class ErrorsView extends IView {
     }
 
     @Override
+    public void setImage(Bitmap res) {
+        errorImage.setImageBitmap(res);
+    }
+
+    @Override
     public void setRetryBtnText(@StringRes int text) {
+        retryBtn.setText(text);
+    }
+
+    @Override
+    public void setRetryBtnText(String text) {
         retryBtn.setText(text);
     }
 
     @Override
     public void setBtnOnClickListener(OnClickListener view) {
         retryBtn.setOnClickListener(view);
+    }
+
+    @Override
+    public void setTextColor(int text) {
+        retryBtn.setTextColor(text);
+        errorText.setTextColor(text);
+    }
+
+    @Override
+    public void setLoadingView(Drawable res) {
+
+    }
+
+
+    @Override
+    public void setLoadingView(View res) {
+
+    }
+
+    @Override
+    public void setLoadingView() {
+
+    }
+
+    @Override
+    public void stopAnimation() {
+
     }
 
     @Override

@@ -10,14 +10,14 @@ import android.view.View;
 
 import com.example.admin.myapplication.R;
 import com.example.admin.myapplication.view1.adapter.TestAdapter;
-import com.example.mylibrary.view.baseView.dataShowLayout;
-import com.example.mylibrary.view.type.errorType;
+import com.example.mylibrary.view.baseView.DataShowLayout;
+import com.example.mylibrary.view.type.ErrorType;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity{
-    private dataShowLayout layout;
+    private DataShowLayout layout;
     private RecyclerView rec;
     private TestAdapter adapter;
     private List<String> musicList=new ArrayList<String>();
@@ -28,7 +28,9 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        layout= (dataShowLayout) findViewById(R.id.views);
+
+
+        layout= (DataShowLayout) findViewById(R.id.views);
         rec= (RecyclerView) findViewById(R.id.rec);
         setRecSetting();
         errors="error";
@@ -47,28 +49,30 @@ public class MainActivity extends AppCompatActivity{
     }
     public void setAdapter(final String error,final String netError)
     {
-        layout.setStatus(errorType.LOADING);
+        layout.setStatus(ErrorType.LOADING);
+
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 if (error!=null)
                 {
-                    layout.setStatus(errorType.ERROR);
+                    layout.setStatus(ErrorType.ERROR);
                     errors=null;
                     netErrors="netError";
                 }else
                 {
                     if (netError!=null)
                     {
-                        layout.setStatus(errorType.NETERROR);
+                        layout.setStatus(ErrorType.NETERROR);
                         errors=null;
                         netErrors=null;
                     }else
                     {
                         if (musicList.size()>0)
                         {
-                            layout.setStatus(errorType.SUCCESS);
+                            layout.setStatus(ErrorType.SUCCESS);
                             adapter=new TestAdapter(MainActivity.this,R.layout.item,musicList);
                             rec.setAdapter(adapter);
                         }else
@@ -77,7 +81,7 @@ public class MainActivity extends AppCompatActivity{
                             {
                                 musicList.add((i+1)+"");
                             }
-                            layout.setStatus(errorType.EMPTY);
+                            layout.setStatus(ErrorType.EMPTY);
 
                         }
                     }
